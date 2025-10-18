@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDT Hub - PHARM EXPERTIES GROUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+        <div class="container py-2">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">PHARM EXPERTIES GROUP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="pst.html">PST Hub</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="cmt.html">CMT Hub</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="cdt.html">CDT Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-lg-3" role="search" onsubmit="return false;">
+                    <input class="form-control me-2" type="search" id="moduleSearch" placeholder="Filter Modules..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="button" onclick="filterModules()"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="app-page-header shadow-sm" style="background-color: var(--color-cdt);">
+        <div class="container">
+            <i class="bi bi-people-fill text-dark mb-3" style="font-size: 3.5rem;"></i>
+            <h1 class="display-5 fw-bold text-dark">CDT Hub - Community Development Technician</h1>
+            <p class="lead fw-light text-dark opacity-75">Access organized materials: Year $\rightarrow$ Semester $\rightarrow$ Module $\rightarrow$ Content Folders.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+
+            <div class="col-md-9">
+                <h2 class="mb-4 text-cdt fw-bold">CDT Academic Resources by Year</h2>
+
+                <div class="accordion mb-4" id="YearAccordion">
+                    
+                    <div class="accordion-item shadow-lg">
+                        <h2 class="accordion-header" id="headingYearOne">
+                            <button class="accordion-button fw-bolder fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYearOne" aria-expanded="true" aria-controls="collapseYearOne">
+                                <i class="bi bi-calendar-check me-3 text-cdt"></i> Year I Resources
+                            </button>
+                        </h2>
+                        <div id="collapseYearOne" class="accordion-collapse collapse show" aria-labelledby="headingYearOne" data-bs-parent="#YearAccordion">
+                            <div class="accordion-body p-0">
+                                
+                                <div class="accordion border-0" id="SemOneAccordion">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemOne">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemOne" aria-expanded="false" aria-controls="collapseSemOne">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester I Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemOne" class="accordion-collapse collapse" aria-labelledby="headingSemOne" data-bs-parent="#SemOneAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Sociology">
+                                                    <h2 class="accordion-header" id="headingSociology">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSociology" aria-expanded="false" aria-controls="collapseSociology">
+                                                            <i class="bi bi-person-lines-fill me-2 text-info"></i> Sociology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseSociology" class="accordion-collapse collapse" aria-labelledby="headingSociology" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-0 border-top">
+                                                            <h6 class="p-3 mb-0 bg-white text-cdt fw-bold border-bottom">Choose Content Folder:</h6>
+                                                            
+                                                            <div class="download-item">
+                                                                <strong><i class="bi bi-file-text me-2"></i> 1. Notes Folder</strong>
+                                                                <a href="#notes-files-cdt-sociology" data-bs-toggle="collapse" class="btn btn-sm btn-cdt text-dark">Open Folder</a>
+                                                            </div>
+                                                            <div id="notes-files-cdt-sociology" class="collapse p-2 ps-5 bg-light border-bottom">
+                                                                <div class="download-item bg-light p-2 ps-4">
+                                                                    <strong class="small">Sociology - Full Module Notes (2024)</strong>
+                                                                    <a href="files/cdt/year1/sem1/sociology-notes.pdf" target="_blank" class="btn btn-sm btn-outline-cdt">View / Download</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="download-item">
+                                                                <strong><i class="bi bi-patch-question me-2"></i> 2. Questions & Past Papers Folder</strong>
+                                                                <button class="btn btn-sm btn-secondary disabled">Open Folder</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item border-0 module-item" data-module-name="Gender Development">
+                                                    <h2 class="accordion-header" id="headingGender">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGender" aria-expanded="false" aria-controls="collapseGender">
+                                                            <i class="bi bi-gender-ambiguous me-2 text-danger"></i> Gender Development
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseGender" class="accordion-collapse collapse" aria-labelledby="headingGender" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Gender Development are coming soon!</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item border-0 module-item" data-module-name="Basic Micro-Economics">
+                                                    <h2 class="accordion-header" id="headingMicroEcon">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMicroEcon" aria-expanded="false" aria-controls="collapseMicroEcon">
+                                                            <i class="bi bi-graph-up-arrow me-2 text-success"></i> Basic Micro-Economics
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseMicroEcon" class="accordion-collapse collapse" aria-labelledby="headingMicroEcon" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Basic Micro-Economics are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Development Studies">
+                                                    <h2 class="accordion-header" id="headingDevStudies">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevStudies" aria-expanded="false" aria-controls="collapseDevStudies">
+                                                            <i class="bi bi-house-door me-2 text-primary"></i> Development Studies
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDevStudies" class="accordion-collapse collapse" aria-labelledby="headingDevStudies" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Development Studies are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemTwo">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemTwo" aria-expanded="false" aria-controls="collapseSemTwo">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester II Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemTwo" class="accordion-collapse collapse" aria-labelledby="headingSemTwo" data-bs-parent="#SemOneAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Community Development">
+                                                    <h2 class="accordion-header" id="headingCommDev">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommDev" aria-expanded="false" aria-controls="collapseCommDev">
+                                                            <i class="bi bi-people me-2 text-warning"></i> Community Development
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCommDev" class="accordion-collapse collapse" aria-labelledby="headingCommDev" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Community Development are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="CD Theory">
+                                                    <h2 class="accordion-header" id="headingCDTheory">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCDTheory" aria-expanded="false" aria-controls="collapseCDTheory">
+                                                            <i class="bi bi-book-half me-2 text-info"></i> CD Theory
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCDTheory" class="accordion-collapse collapse" aria-labelledby="headingCDTheory" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for CD Theory are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Participatory Planning">
+                                                    <h2 class="accordion-header" id="headingPPlan">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePPlan" aria-expanded="false" aria-controls="collapsePPlan">
+                                                            <i class="bi bi-calendar-event me-2 text-primary"></i> Participatory Planning
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePPlan" class="accordion-collapse collapse" aria-labelledby="headingPPlan" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Participatory Planning are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Adult Learning">
+                                                    <h2 class="accordion-header" id="headingAdultLearn">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdultLearn" aria-expanded="false" aria-controls="collapseAdultLearn">
+                                                            <i class="bi bi-person-badge me-2 text-danger"></i> Adult Learning
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAdultLearn" class="accordion-collapse collapse" aria-labelledby="headingAdultLearn" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Adult Learning are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item shadow-lg mt-3">
+                        <h2 class="accordion-header" id="headingYearTwo">
+                            <button class="accordion-button collapsed fw-bolder fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYearTwo" aria-expanded="false" aria-controls="collapseYearTwo">
+                                <i class="bi bi-calendar-check me-3 text-cdt"></i> Year II Resources
+                            </button>
+                        </h2>
+                        <div id="collapseYearTwo" class="accordion-collapse collapse" aria-labelledby="headingYearTwo" data-bs-parent="#YearAccordion">
+                            <div class="accordion-body p-0">
+                                
+                                <div class="accordion border-0" id="SemThreeAccordion">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemThree">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemThree" aria-expanded="false" aria-controls="collapseSemThree">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester III Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemThree" class="accordion-collapse collapse" aria-labelledby="headingSemThree" data-bs-parent="#SemThreeAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Group Management">
+                                                    <h2 class="accordion-header" id="headingGroupMgt">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGroupMgt" aria-expanded="false" aria-controls="collapseGroupMgt">
+                                                            <i class="bi bi-hand-thumbs-up me-2 text-info"></i> Group Management
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseGroupMgt" class="accordion-collapse collapse" aria-labelledby="headingGroupMgt" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Group Management are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Creativity">
+                                                    <h2 class="accordion-header" id="headingCreativity">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCreativity" aria-expanded="false" aria-controls="collapseCreativity">
+                                                            <i class="bi bi-lightbulb me-2 text-success"></i> Creativity
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCreativity" class="accordion-collapse collapse" aria-labelledby="headingCreativity" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Creativity are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Lobbying and Advocacy">
+                                                    <h2 class="accordion-header" id="headingLobbying">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLobbying" aria-expanded="false" aria-controls="collapseLobbying">
+                                                            <i class="bi bi-megaphone me-2 text-danger"></i> Lobbying and Advocacy
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseLobbying" class="accordion-collapse collapse" aria-labelledby="headingLobbying" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Lobbying and Advocacy are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Disaster Management">
+                                                    <h2 class="accordion-header" id="headingDisaster">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDisaster" aria-expanded="false" aria-controls="collapseDisaster">
+                                                            <i class="bi bi-fire me-2 text-warning"></i> Disaster Management
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDisaster" class="accordion-collapse collapse" aria-labelledby="headingDisaster" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Disaster Management are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemFour">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemFour" aria-expanded="false" aria-controls="collapseSemFour">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester IV Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemFour" class="accordion-collapse collapse" aria-labelledby="headingSemFour" data-bs-parent="#SemThreeAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Appropriate Technology">
+                                                    <h2 class="accordion-header" id="headingAppTech">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAppTech" aria-expanded="false" aria-controls="collapseAppTech">
+                                                            <i class="bi bi-gear me-2 text-primary"></i> Appropriate Technology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAppTech" class="accordion-collapse collapse" aria-labelledby="headingAppTech" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Appropriate Technology are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Entrepreneurship">
+                                                    <h2 class="accordion-header" id="headingEntrep">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEntrep" aria-expanded="false" aria-controls="collapseEntrep">
+                                                            <i class="bi bi-cash me-2 text-success"></i> Entrepreneurship
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseEntrep" class="accordion-collapse collapse" aria-labelledby="headingEntrep" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Entrepreneurship are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Community Participation">
+                                                    <h2 class="accordion-header" id="headingCommPart">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommPart" aria-expanded="false" aria-controls="collapseCommPart">
+                                                            <i class="bi bi-hand-index me-2 text-danger"></i> Community Participation
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCommPart" class="accordion-collapse collapse" aria-labelledby="headingCommPart" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Community Participation are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Project Management">
+                                                    <h2 class="accordion-header" id="headingProjMgt">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjMgt" aria-expanded="false" aria-controls="collapseProjMgt">
+                                                            <i class="bi bi-list-task me-2 text-info"></i> Project Management
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseProjMgt" class="accordion-collapse collapse" aria-labelledby="headingProjMgt" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Project Management are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item shadow-lg mt-3">
+                        <h2 class="accordion-header" id="headingYearThree">
+                            <button class="accordion-button collapsed fw-bolder fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYearThree" aria-expanded="false" aria-controls="collapseYearThree">
+                                <i class="bi bi-calendar-check me-3 text-cdt"></i> Year III Resources
+                            </button>
+                        </h2>
+                        <div id="collapseYearThree" class="accordion-collapse collapse" aria-labelledby="headingYearThree" data-bs-parent="#YearAccordion">
+                            <div class="accordion-body p-0">
+                                
+                                <div class="accordion border-0" id="SemFiveAccordion">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemFive">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemFive" aria-expanded="false" aria-controls="collapseSemFive">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester V Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemFive" class="accordion-collapse collapse" aria-labelledby="headingSemFive" data-bs-parent="#SemFiveAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Civic Education">
+                                                    <h2 class="accordion-header" id="headingCivic">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCivic" aria-expanded="false" aria-controls="collapseCivic">
+                                                            <i class="bi bi-flag me-2 text-danger"></i> Civic Education
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCivic" class="accordion-collapse collapse" aria-labelledby="headingCivic" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Civic Education are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Psychology">
+                                                    <h2 class="accordion-header" id="headingPsycho">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePsycho" aria-expanded="false" aria-controls="collapsePsycho">
+                                                            <i class="bi bi-chat-heart me-2 text-success"></i> Psychology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePsycho" class="accordion-collapse collapse" aria-labelledby="headingPsycho" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Psychology are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Critical Thinking">
+                                                    <h2 class="accordion-header" id="headingCritThink">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCritThink" aria-expanded="false" aria-controls="collapseCritThink">
+                                                            <i class="bi bi-lightbulb-fill me-2 text-warning"></i> Critical Thinking
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCritThink" class="accordion-collapse collapse" aria-labelledby="headingCritThink" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Critical Thinking are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Resource Management">
+                                                    <h2 class="accordion-header" id="headingResourceMgt">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResourceMgt" aria-expanded="false" aria-controls="collapseResourceMgt">
+                                                            <i class="bi bi-piggy-bank me-2 text-info"></i> Resource Management
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseResourceMgt" class="accordion-collapse collapse" aria-labelledby="headingResourceMgt" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Resource Management are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemSix">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemSix" aria-expanded="false" aria-controls="collapseSemSix">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester VI Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemSix" class="accordion-collapse collapse" aria-labelledby="headingSemSix" data-bs-parent="#SemFiveAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Communication and Management">
+                                                    <h2 class="accordion-header" id="headingCommMgt">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommMgt" aria-expanded="false" aria-controls="collapseCommMgt">
+                                                            <i class="bi bi-chat-right-text me-2 text-danger"></i> Communication & Management
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCommMgt" class="accordion-collapse collapse" aria-labelledby="headingCommMgt" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Communication & Management are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Microfinance">
+                                                    <h2 class="accordion-header" id="headingMicrofinance">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMicrofinance" aria-expanded="false" aria-controls="collapseMicrofinance">
+                                                            <i class="bi bi-currency-dollar me-2 text-success"></i> Microfinance
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseMicrofinance" class="accordion-collapse collapse" aria-labelledby="headingMicrofinance" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Microfinance are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Elementary Bookkeeping">
+                                                    <h2 class="accordion-header" id="headingBookkeeping">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBookkeeping" aria-expanded="false" aria-controls="collapseBookkeeping">
+                                                            <i class="bi bi-journal-text me-2 text-warning"></i> Elementary Bookkeeping
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseBookkeeping" class="accordion-collapse collapse" aria-labelledby="headingBookkeeping" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Elementary Bookkeeping are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Information and Communication Management">
+                                                    <h2 class="accordion-header" id="headingICM">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseICM" aria-expanded="false" aria-controls="collapseICM">
+                                                            <i class="bi bi-cloud-check me-2 text-info"></i> Information & Comm. Mgt.
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseICM" class="accordion-collapse collapse" aria-labelledby="headingICM" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Information & Comm. Mgt. are coming soon!</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item border-0 module-item" data-module-name="Community Engagement">
+                                                    <h2 class="accordion-header" id="headingCommEngage">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommEngage" aria-expanded="false" aria-controls="collapseCommEngage">
+                                                            <i class="bi bi-hand-heart me-2 text-primary"></i> Community Engagement
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCommEngage" class="accordion-collapse collapse" aria-labelledby="headingCommEngage" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Community Engagement are coming soon!</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item border-0 module-item" data-module-name="Basic of ICT">
+                                                    <h2 class="accordion-header" id="headingICT">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseICT" aria-expanded="false" aria-controls="collapseICT">
+                                                            <i class="bi bi-keyboard me-2 text-secondary"></i> Basic of ICT
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseICT" class="accordion-collapse collapse" aria-labelledby="headingICT" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Basic of ICT are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <h3 class="mb-4 text-secondary fw-bold">CDT Hub Quick Links</h3>
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="list-group list-group-flush">
+                        <a href="#collapseYearOne" data-bs-toggle="collapse" class="list-group-item list-group-item-action fw-semibold text-cdt"><i class="bi bi-mortarboard me-2"></i> View Year I Modules</a>
+                        <a href="#collapseYearTwo" data-bs-toggle="collapse" class="list-group-item list-group-item-action fw-semibold text-cdt"><i class="bi bi-mortarboard me-2"></i> View Year II Modules</a>
+                        <a href="#collapseYearThree" data-bs-toggle="collapse" class="list-group-item list-group-item-action fw-semibold text-cdt"><i class="bi bi-mortarboard me-2"></i> View Year III Modules</a>
+                        <a href="articles.html" class="list-group-item list-group-item-action text-dark"><i class="bi bi-journal-text me-2"></i> CDT-Related Articles</a>
+                        <a href="contact.html" class="list-group-item list-group-item-action text-dark"><i class="bi bi-question-circle me-2"></i> Ask a Question</a>
+                    </div>
+                </div>
+                
+                <div class="ad-slot-placeholder-sidebar">
+                    [ADVERTISEMENT - Google AdSense Square Ad]
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white-50 py-4 mt-auto border-top border-warning border-3">
+        <div class="container text-center">
+            <p class="mb-0 small">© 2024 PHARM EXPERTIES GROUP. All rights reserved. | <a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a> | <a href="articles.html" class="text-white-50 text-decoration-none">Articles</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function filterModules() {
+            const input = document.getElementById('moduleSearch');
+            const filter = input.value.toUpperCase();
+            const moduleItems = document.querySelectorAll('.module-item');
+            
+            moduleItems.forEach(item => {
+                const moduleName = item.getAttribute('data-module-name').toUpperCase();
+                
+                if (moduleName.includes(filter)) {
+                    item.style.display = ""; // Show the item
+                } else {
+                    item.style.display = "none"; // Hide the item
+                }
+            });
+        }
+        
+        // Add event listener for real-time filtering on input change
+        document.getElementById('moduleSearch').addEventListener('keyup', filterModules);
+    </script>
+</body>
+</html>

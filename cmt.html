@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMT Hub - PHARM EXPERTIES GROUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+        <div class="container py-2">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">PHARM EXPERTIES GROUP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="pst.html">PST Hub</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="cmt.html">CMT Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cdt.html">CDT Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-lg-3" role="search" onsubmit="return false;">
+                    <input class="form-control me-2" type="search" id="moduleSearch" placeholder="Filter Modules..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="button" onclick="filterModules()"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="app-page-header shadow-sm" style="background-color: var(--color-cmt);">
+        <div class="container">
+            <i class="bi bi-heart-pulse text-white mb-3" style="font-size: 3.5rem;"></i>
+            <h1 class="display-5 fw-bold text-white">CMT Hub - Clinical Medicine Technician</h1>
+            <p class="lead fw-light text-white opacity-75">Access organized materials: Year $\rightarrow$ Semester $\rightarrow$ Module $\rightarrow$ Content Folders.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+
+            <div class="col-md-9">
+                <h2 class="mb-4 text-cmt fw-bold">CMT Academic Resources by Year</h2>
+
+                <div class="accordion mb-4" id="YearAccordion">
+                    
+                    <div class="accordion-item shadow-lg">
+                        <h2 class="accordion-header" id="headingYearOne">
+                            <button class="accordion-button fw-bolder fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYearOne" aria-expanded="true" aria-controls="collapseYearOne">
+                                <i class="bi bi-calendar-check me-3 text-cmt"></i> Year I Resources
+                            </button>
+                        </h2>
+                        <div id="collapseYearOne" class="accordion-collapse collapse show" aria-labelledby="headingYearOne" data-bs-parent="#YearAccordion">
+                            <div class="accordion-body p-0">
+                                
+                                <div class="accordion border-0" id="SemOneAccordion">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemOne">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemOne" aria-expanded="false" aria-controls="collapseSemOne">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester I Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemOne" class="accordion-collapse collapse" aria-labelledby="headingSemOne" data-bs-parent="#SemOneAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Anatomy">
+                                                    <h2 class="accordion-header" id="headingAnatomy">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnatomy" aria-expanded="false" aria-controls="collapseAnatomy">
+                                                            <i class="bi bi-body me-2 text-info"></i> Anatomy
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAnatomy" class="accordion-collapse collapse" aria-labelledby="headingAnatomy" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-0 border-top">
+                                                            <h6 class="p-3 mb-0 bg-white text-cmt fw-bold border-bottom">Choose Content Folder:</h6>
+                                                            
+                                                            <div class="download-item">
+                                                                <strong><i class="bi bi-file-text me-2"></i> 1. Notes Folder</strong>
+                                                                <a href="#notes-files-cmt-anatomy" data-bs-toggle="collapse" class="btn btn-sm btn-cmt text-white">Open Folder</a>
+                                                            </div>
+                                                            <div id="notes-files-cmt-anatomy" class="collapse p-2 ps-5 bg-light border-bottom">
+                                                                <div class="download-item bg-light p-2 ps-4">
+                                                                    <strong class="small">Anatomy - Full Module Notes (2024)</strong>
+                                                                    <a href="files/cmt/year1/sem1/anatomy-notes.pdf" target="_blank" class="btn btn-sm btn-outline-cmt">View / Download</a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="download-item">
+                                                                <strong><i class="bi bi-patch-question me-2"></i> 2. Questions & Past Papers Folder</strong>
+                                                                <button class="btn btn-sm btn-secondary disabled">Open Folder</button>
+                                                            </div>
+                                                            <div class="download-item">
+                                                                <strong><i class="bi bi-film me-2"></i> 3. Videos Folder</strong>
+                                                                <button class="btn btn-sm btn-secondary disabled">Open Folder</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item border-0 module-item" data-module-name="Pathology">
+                                                    <h2 class="accordion-header" id="headingPathology">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePathology" aria-expanded="false" aria-controls="collapsePathology">
+                                                            <i class="bi bi-virus me-2 text-danger"></i> Pathology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePathology" class="accordion-collapse collapse" aria-labelledby="headingPathology" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Pathology are coming soon!</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item border-0 module-item" data-module-name="Pharmacology">
+                                                    <h2 class="accordion-header" id="headingPharm">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePharm" aria-expanded="false" aria-controls="collapsePharm">
+                                                            <i class="bi bi-prescription2 me-2 text-success"></i> Pharmacology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePharm" class="accordion-collapse collapse" aria-labelledby="headingPharm" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Pharmacology are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Internal Medicine II">
+                                                    <h2 class="accordion-header" id="headingIntMedII">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntMedII" aria-expanded="false" aria-controls="collapseIntMedII">
+                                                            <i class="bi bi-heart me-2 text-primary"></i> Internal Medicine II
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseIntMedII" class="accordion-collapse collapse" aria-labelledby="headingIntMedII" data-bs-parent="#collapseSemOne">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Internal Medicine II are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemTwo">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemTwo" aria-expanded="false" aria-controls="collapseSemTwo">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester II Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemTwo" class="accordion-collapse collapse" aria-labelledby="headingSemTwo" data-bs-parent="#SemOneAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Physiology">
+                                                    <h2 class="accordion-header" id="headingPhysio">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysio" aria-expanded="false" aria-controls="collapsePhysio">
+                                                            <i class="bi bi-graph-up me-2 text-warning"></i> Physiology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePhysio" class="accordion-collapse collapse" aria-labelledby="headingPhysio" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Physiology are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Clinical Skills">
+                                                    <h2 class="accordion-header" id="headingClinSkills">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClinSkills" aria-expanded="false" aria-controls="collapseClinSkills">
+                                                            <i class="bi bi-person-video2 me-2 text-info"></i> Clinical Skills
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseClinSkills" class="accordion-collapse collapse" aria-labelledby="headingClinSkills" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Clinical Skills are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Internal Medicine I">
+                                                    <h2 class="accordion-header" id="headingIntMedI">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntMedI" aria-expanded="false" aria-controls="collapseIntMedI">
+                                                            <i class="bi bi-heart me-2 text-primary"></i> Internal Medicine I
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseIntMedI" class="accordion-collapse collapse" aria-labelledby="headingIntMedI" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Internal Medicine I are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Obstetrics & Gynaecology II">
+                                                    <h2 class="accordion-header" id="headingOBGYNII">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOBGYNII" aria-expanded="false" aria-controls="collapseOBGYNII">
+                                                            <i class="bi bi-gender-female me-2 text-danger"></i> Obstetrics & Gynaecology II
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOBGYNII" class="accordion-collapse collapse" aria-labelledby="headingOBGYNII" data-bs-parent="#collapseSemTwo">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Obstetrics & Gynaecology II are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item shadow-lg mt-3">
+                        <h2 class="accordion-header" id="headingYearTwo">
+                            <button class="accordion-button collapsed fw-bolder fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYearTwo" aria-expanded="false" aria-controls="collapseYearTwo">
+                                <i class="bi bi-calendar-check me-3 text-cmt"></i> Year II Resources
+                            </button>
+                        </h2>
+                        <div id="collapseYearTwo" class="accordion-collapse collapse" aria-labelledby="headingYearTwo" data-bs-parent="#YearAccordion">
+                            <div class="accordion-body p-0">
+                                
+                                <div class="accordion border-0" id="SemThreeAccordion">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemThree">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemThree" aria-expanded="false" aria-controls="collapseSemThree">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester III Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemThree" class="accordion-collapse collapse" aria-labelledby="headingSemThree" data-bs-parent="#SemThreeAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Medical Ethics">
+                                                    <h2 class="accordion-header" id="headingEthics">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEthics" aria-expanded="false" aria-controls="collapseEthics">
+                                                            <i class="bi bi-shield-fill me-2 text-info"></i> Medical Ethics
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseEthics" class="accordion-collapse collapse" aria-labelledby="headingEthics" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Medical Ethics are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Clinical Lab">
+                                                    <h2 class="accordion-header" id="headingLab">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLab" aria-expanded="false" aria-controls="collapseLab">
+                                                            <i class="bi bi-clipboard-data me-2 text-success"></i> Clinical Lab
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseLab" class="accordion-collapse collapse" aria-labelledby="headingLab" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Clinical Lab are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Obstetrics & Gynaecology I">
+                                                    <h2 class="accordion-header" id="headingOBGYNI">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOBGYNI" aria-expanded="false" aria-controls="collapseOBGYNI">
+                                                            <i class="bi bi-gender-female me-2 text-danger"></i> Obstetrics & Gynaecology I
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOBGYNI" class="accordion-collapse collapse" aria-labelledby="headingOBGYNI" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Obstetrics & Gynaecology I are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Surgery">
+                                                    <h2 class="accordion-header" id="headingSurgery">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSurgery" aria-expanded="false" aria-controls="collapseSurgery">
+                                                            <i class="bi bi-scissors me-2 text-warning"></i> Surgery
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseSurgery" class="accordion-collapse collapse" aria-labelledby="headingSurgery" data-bs-parent="#collapseSemThree">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Surgery are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemFour">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemFour" aria-expanded="false" aria-controls="collapseSemFour">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester IV Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemFour" class="accordion-collapse collapse" aria-labelledby="headingSemFour" data-bs-parent="#SemThreeAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Epidemiology & Biostatistics">
+                                                    <h2 class="accordion-header" id="headingEpi">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEpi" aria-expanded="false" aria-controls="collapseEpi">
+                                                            <i class="bi bi-bar-chart-fill me-2 text-primary"></i> Epidemiology & Biostatistics
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseEpi" class="accordion-collapse collapse" aria-labelledby="headingEpi" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Epidemiology & Biostatistics are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Patient Care">
+                                                    <h2 class="accordion-header" id="headingPatientCare">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatientCare" aria-expanded="false" aria-controls="collapsePatientCare">
+                                                            <i class="bi bi-person-fill-gear me-2 text-success"></i> Patient Care
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePatientCare" class="accordion-collapse collapse" aria-labelledby="headingPatientCare" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Patient Care are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Paediatrics I">
+                                                    <h2 class="accordion-header" id="headingPaeds">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePaeds" aria-expanded="false" aria-controls="collapsePaeds">
+                                                            <i class="bi bi-clipboard-pulse me-2 text-danger"></i> Paediatrics I
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePaeds" class="accordion-collapse collapse" aria-labelledby="headingPaeds" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Paediatrics I are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="RSH">
+                                                    <h2 class="accordion-header" id="headingRSH">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRSH" aria-expanded="false" aria-controls="collapseRSH">
+                                                            <i class="bi bi-heart-half me-2 text-info"></i> RSH
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseRSH" class="accordion-collapse collapse" aria-labelledby="headingRSH" data-bs-parent="#collapseSemFour">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for RSH are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item shadow-lg mt-3">
+                        <h2 class="accordion-header" id="headingYearThree">
+                            <button class="accordion-button collapsed fw-bolder fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYearThree" aria-expanded="false" aria-controls="collapseYearThree">
+                                <i class="bi bi-calendar-check me-3 text-cmt"></i> Year III Resources
+                          class="accordion-body p-0">
+                                
+                                <div class="accordion border-0" id="SemFiveAccordion">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemFive">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemFive" aria-expanded="false" aria-controls="collapseSemFive">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester V Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemFive" class="accordion-collapse collapse" aria-labelledby="headingSemFive" data-bs-parent="#SemFiveAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Microbiology">
+                                                    <h2 class="accordion-header" id="headingMicro">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMicro" aria-expanded="false" aria-controls="collapseMicro">
+                                                            <i class="bi bi-bug me-2 text-danger"></i> Microbiology
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseMicro" class="accordion-collapse collapse" aria-labelledby="headingMicro" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Microbiology are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Nutrition">
+                                                    <h2 class="accordion-header" id="headingNutri">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNutri" aria-expanded="false" aria-controls="collapseNutri">
+                                                            <i class="bi bi-egg-fried me-2 text-success"></i> Nutrition
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseNutri" class="accordion-collapse collapse" aria-labelledby="headingNutri" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Nutrition are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Health Promotion">
+                                                    <h2 class="accordion-header" id="headingHP">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHP" aria-expanded="false" aria-controls="collapseHP">
+                                                            <i class="bi bi-hand-thumbs-up me-2 text-warning"></i> Health Promotion
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseHP" class="accordion-collapse collapse" aria-labelledby="headingHP" data-bs-parent="#collapseSemFive">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Health Promotion are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="headingSemSix">
+                                            <button class="accordion-button collapsed fw-bold text-dark bg-light mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSemSix" aria-expanded="false" aria-controls="collapseSemSix">
+                                                <i class="bi bi-folder-fill me-2 text-primary"></i> Semester VI Modules
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSemSix" class="accordion-collapse collapse" aria-labelledby="headingSemSix" data-bs-parent="#SemFiveAccordion">
+                                            <div class="accordion-body p-0 border-top">
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Communication Skills">
+                                                    <h2 class="accordion-header" id="headingComm">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComm" aria-expanded="false" aria-controls="collapseComm">
+                                                            <i class="bi bi-chat-dots me-2 text-info"></i> Communication Skills
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseComm" class="accordion-collapse collapse" aria-labelledby="headingComm" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Communication Skills are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Counseling">
+                                                    <h2 class="accordion-header" id="headingCounsel">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCounsel" aria-expanded="false" aria-controls="collapseCounsel">
+                                                            <i class="bi bi-people me-2 text-primary"></i> Counseling
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCounsel" class="accordion-collapse collapse" aria-labelledby="headingCounsel" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Counseling are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item border-0 module-item" data-module-name="Computer">
+                                                    <h2 class="accordion-header" id="headingComputer">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComputer" aria-expanded="false" aria-controls="collapseComputer">
+                                                            <i class="bi bi-laptop me-2 text-secondary"></i> Computer
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseComputer" class="accordion-collapse collapse" aria-labelledby="headingComputer" data-bs-parent="#collapseSemSix">
+                                                        <div class="accordion-body p-4 text-muted">Content folders for Computer are coming soon!</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <h3 class="mb-4 text-secondary fw-bold">CMT Hub Quick Links</h3>
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="list-group list-group-flush">
+                        <a href="#collapseYearOne" data-bs-toggle="collapse" class="list-group-item list-group-item-action fw-semibold text-cmt"><i class="bi bi-mortarboard me-2"></i> View Year I Modules</a>
+                        <a href="#collapseYearTwo" data-bs-toggle="collapse" class="list-group-item list-group-item-action fw-semibold text-cmt"><i class="bi bi-mortarboard me-2"></i> View Year II Modules</a>
+                        <a href="#collapseYearThree" data-bs-toggle="collapse" class="list-group-item list-group-item-action fw-semibold text-cmt"><i class="bi bi-mortarboard me-2"></i> View Year III Modules</a>
+                        <a href="articles.html" class="list-group-item list-group-item-action text-dark"><i class="bi bi-journal-text me-2"></i> CMT-Related Articles</a>
+                        <a href="contact.html" class="list-group-item list-group-item-action text-dark"><i class="bi bi-question-circle me-2"></i> Ask a Question</a>
+                    </div>
+                </div>
+                
+                <div class="ad-slot-placeholder-sidebar">
+                    [ADVERTISEMENT - Google AdSense Square Ad]
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white-50 py-4 mt-auto border-top border-warning border-3">
+        <div class="container text-center">
+            <p class="mb-0 small">© 2024 PHARM EXPERTIES GROUP. All rights reserved. | <a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a> | <a href="articles.html" class="text-white-50 text-decoration-none">Articles</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function filterModules() {
+            const input = document.getElementById('moduleSearch');
+            const filter = input.value.toUpperCase();
+            const moduleItems = document.querySelectorAll('.module-item');
+            
+            moduleItems.forEach(item => {
+                const moduleName = item.getAttribute('data-module-name').toUpperCase();
+                
+                if (moduleName.includes(filter)) {
+                    item.style.display = ""; // Show the item
+                } else {
+                    item.style.display = "none"; // Hide the item
+                }
+            });
+        }
+        
+        // Add event listener for real-time filtering on input change
+        document.getElementById('moduleSearch').addEventListener('keyup', filterModules);
+    </script>
+</body>
+</html>
