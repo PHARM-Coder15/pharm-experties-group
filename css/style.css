@@ -1,0 +1,199 @@
+/* =================================================================
+   PHARM EXPERTIES GROUP - Custom Style Sheet (style.css)
+   
+   UPDATED: Integrated Art Course colors and styles needed for 
+   advanced Articles and Contact pages.
+================================================================= */
+
+/* --- 1. Global Variables and Base Styles --- */
+:root {
+    /* Standard Bootstrap & Primary Site Colors */
+    --bs-primary: #0056b3;   /* Darker, richer blue (Your original --color-primary) */
+    --bs-secondary: #6c757d; /* Your original --color-secondary */
+    --bs-success: #198754;   /* Your original --color-success */
+    --bs-warning: #ffc107;   /* Bright yellow/gold (Your original --color-warning) */
+    --bs-dark: #212529;      /* Standard Bootstrap Dark */
+
+    /* Custom Course Hub Colors (High Contrast) */
+    --color-pst: #198754;    /* Green: Pharmaceutical Science Tech */
+    --color-cmt: #dc3545;    /* Red: Clinical Medicine Tech */
+    --color-cdt: #0dcaf0;    /* Cyan: Community Development Tech */
+    --color-art: #8A2BE2;    /* Deep Purple: Creativity in Art (NEW) */
+}
+
+body {
+    background-color: #f7f7f7; /* Slightly lighter background for modern contrast */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+/* --- 2. Navigation Bar & Hero Section (FIXED CONTRAST) --- */
+.navbar-dark {
+    background-color: var(--bs-dark) !important; 
+    border-bottom: 3px solid var(--bs-warning);
+}
+/* LARGE, HIGH-CONTRAST HEADER */
+#hero-section {
+    background: var(--bs-primary); 
+    /* Use linear-gradient and background-size if you add an image later */
+    padding: 7rem 0; 
+    position: relative;
+    overflow: hidden;
+}
+#hero-section h1, #hero-section p {
+    color: white !important;
+}
+.icon-center {
+    font-size: 6rem; /* Bigger Icon */
+    color: var(--bs-warning);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+/* Search Form Styling for Professional Header */
+.search-form-lg {
+    max-width: 650px;
+    margin-left: 0 !important;
+    padding: 6px !important;
+}
+.search-form-lg input {
+    font-size: 1.1rem;
+}
+.search-form-lg button {
+    padding: 0.5rem 1.5rem;
+    min-width: 120px;
+}
+
+/* --- 3. Custom Utility Classes (Course-Specific Colors) --- */
+
+/* PST - Pharmaceutical Science Tech */
+.text-pst { color: var(--color-pst) !important; }
+.btn-pst { background-color: var(--color-pst); border-color: var(--color-pst); color: white !important; }
+.btn-pst:hover { background-color: #157347; border-color: #146c43; }
+.card-pst { border-left: 5px solid var(--color-pst) !important; }
+.bg-pst { background-color: var(--color-pst) !important; }
+
+/* CMT - Clinical Medicine Tech */
+.text-cmt { color: var(--color-cmt) !important; }
+.btn-cmt { background-color: var(--color-cmt); border-color: var(--color-cmt); color: white !important; }
+.btn-cmt:hover { background-color: #bb2d3b; border-color: #b02a37; }
+.card-cmt { border-left: 5px solid var(--color-cmt) !important; }
+.bg-cmt { background-color: var(--color-cmt) !important; }
+
+/* CDT - Community Development Tech */
+.text-cdt { color: var(--color-cdt) !important; }
+.btn-cdt { background-color: var(--color-cdt); border-color: var(--color-cdt); color: #212529 !important; }
+.btn-cdt:hover { background-color: #0aa0c4; border-color: #0994b6; }
+.card-cdt { border-left: 5px solid var(--color-cdt) !important; }
+.bg-cdt { background-color: var(--color-cdt) !important; }
+
+/* ART - Creativity in Art (NEW) */
+.text-art { color: var(--color-art) !important; }
+.btn-art { background-color: var(--color-art); border-color: var(--color-art); color: white !important; }
+.btn-art:hover { background-color: #6A1BAA; border-color: #6A1BAA; }
+.card-art { border-left: 5px solid var(--color-art) !important; }
+.bg-art { background-color: var(--color-art) !important; }
+
+/* --- 4. Card & Hover Styling --- */
+.hover-lift {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.hover-lift:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+}
+/* Feature Box Enhancements */
+.feature-box {
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.feature-box:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- 5. Hub Page Content (PST/CMT/CDT) --- */
+
+/* Consistent header style used across all course pages and contact page (app-page-header is NOT fixed) */
+.app-page-header {
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--bs-warning);
+    background-color: var(--bs-dark); /* Ensure a default dark background */
+    color: white; /* Ensure text is readable */
+}
+.app-page-header .display-5 {
+    font-weight: 700;
+}
+
+/* Download Item List Style */
+.download-item {
+    padding: 18px 25px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+.download-item:hover {
+    background-color: #f0f0f0; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.download-item strong {
+    font-weight: 600;
+    color: #333;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+/* --- 6. Sidebar/Ad Placeholder Styling (NEW/IMPROVED) --- */
+
+.ad-slot-placeholder,
+.ad-slot-placeholder-sidebar {
+    background-color: #e9ecef;
+    border: 1px dashed #adb5bd;
+    color: #6c757d;
+    padding: 20px;
+    min-height: 80px;
+    font-size: 0.9rem;
+    margin: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Ensure the sidebar placeholder is tall for vertical ads */
+.ad-slot-placeholder-sidebar {
+    min-height: 300px; 
+}
+
+
+/* --- 7. Media Queries for Mobile Responsiveness --- */
+@media (max-width: 991px) {
+    #hero-section {
+        padding: 4rem 0; /* Reduced padding on mobile */
+    }
+    
+    #hero-section h1 {
+        font-size: 2.5rem !important; /* Smaller headline */
+    }
+    
+    .search-form-lg {
+        padding: 4px !important;
+        /* Center search form on mobile */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    .search-form-lg button {
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+}
