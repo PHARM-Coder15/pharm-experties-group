@@ -2,13 +2,24 @@
 
 body {
     background-color: #f8f9fa;
-    min-height: 100vh; /* Ensure footer stays at bottom */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif; /* Assumes font link is in HTML */
 }
 
 main {
-    flex: 1; /* Allows main content to grow and push footer down */
+    flex: 1; 
+}
+
+/* Custom Hero Header/Page Header Styling */
+.app-header {
+    /* Base style for all hub headers (will be overwritten by specific colors) */
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Subtle Gradient */
+    color: white;
+    text-align: center;
+    padding: 5rem 0; /* More padding for a bigger, bolder look */
+    margin-bottom: 20px;
 }
 
 /* Custom Card Hover Effect */
@@ -17,16 +28,15 @@ main {
 }
 
 .hover-lift:hover {
-    transform: translateY(-5px); /* Lifts the card */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2) !important; /* Deeper shadow on hover */
 }
 
-/* Download Item Styling for PST/CMT/CDT Hubs (Simplified & Reliable) */
-/* This ensures the list items are clean and buttons align well */
+/* Download Item Styling for PST/CMT/CDT Hubs (Stable Grid Layout) */
 .download-item {
     padding: 15px 20px;
     border-bottom: 1px solid #e9ecef;
-    display: flex;
+    display: flex; /* Using flex for simple layout */
     justify-content: space-between;
     align-items: center;
     background-color: white;
@@ -34,15 +44,15 @@ main {
 }
 
 .download-item:hover {
-    background-color: #f1f1f1; /* Subtle highlight */
+    background-color: #f1f1f1; 
 }
 
 .download-item strong {
-    flex-grow: 1; /* Allows title to take up space */
+    flex-grow: 1; 
     margin-right: 15px;
 }
 
-/* Placeholder for Adsense Styling */
+/* Ad Slot Placeholder Styling */
 .ad-slot-placeholder {
     border: 1px dashed #adb5bd;
     color: #6c757d;
